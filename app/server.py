@@ -12,7 +12,7 @@ api = Api(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 try:
-    serial_comm = SerialCommunication(port='COM13')  # Cambiar por el puerto adecuado
+    serial_comm = SerialCommunication(port='COM3')  # Cambiar por el puerto adecuado
 except serial.SerialException as e:
     print(f"Error al abrir el puerto serial: {e}")
 
